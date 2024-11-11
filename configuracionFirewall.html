@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración del Firewall en Windows 10</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ee11d1;
+        }
+        header {
+            background-color: #444;
+            color: rgb(101, 234, 249);
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            text-align: 0px;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+        ol, ul {
+            margin: 10px 0;
+            padding: 0 20px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="Technology.png" alt="Descripción de la imagen" class="header-img">
+    </div>
+    <div class="header">
+        <h1>REBORN TECHNOLOGY</h1>
+    </div>
+    <div class="nav">
+        <a href="BBDDREBORN.HTML">Diseño Base de Datos</a>
+        <a href="configuracionFirewall.html">Configuración Firewall</a>
+        <a href="Desarrolloanalisis.html">Desarrollo del Análisis de Riesgos</a>
+        <a href="PasivaSeguridad.html">Pasiva Seguridad</a>
+    </div>
+
+<section id="entrada">
+    <h2>Reglas de Entrada</h2>
+    
+        <p>Nos ponemos firewall y nos metemos en él.</p>
+        <img src="Img1.png" alt="Descripción de la imagen">
+       
+    
+</section>
+
+<section id="telnet">
+    <h2>Comprobación de Conexión Telnet</h2>
+    <p>Para ver si podemos entablar conexión con otro host escribimos:</p>
+    <pre><code>open 10.0.2.15 23</code></pre>
+    <img src="Img2.png" alt="Descripción de la imagen">
+    <p>Si la conexión no se puede abrir, significa que el otro host lo tiene bloqueado.</p>
+</section>
+
+<section id="habilitar-telnet">
+    <h2>Habilitar Telnet</h2>
+   
+        <p>Firewall Windows - Configuración avanzada - Reglas de Entrada/Salida.</p>
+        <p>Vamos al panel de control y a programas</p>
+        <p>Activar o desactivar las características de Windows.</p></li>
+        <img src="Img3.png" alt="Descripción de la imagen">
+        <p>Buscamos cliente telnet, seleccionamos y aceptar.</p>
+        <p>Una vez aceptamos ya podríamos meternos a telnet.</p>
+    
+</section>
+
+<section id="ftp">
+    <h2>Comprobación de FTP</h2>
+    <p>Para comprobar FTP, hemos instalado FileZilla y desde ahí hemos ido haciendo la comprobación.</p>
+    <img src="Img4.png" alt="Descripción de la imagen">
+</section>
+
+<section id="bloquear-meet">
+    <h2>Bloquear Google Meet</h2>
+    
+        <p>Seleccionamos UDP y le ponemos 3478, 19302-19309.</p>
+        <p>El 3478 es para bloquear el audio y el 19302-19309 es para bloquear el video.</p>
+        <img src="Img5.png" alt="Descripción de la imagen">
+    
+    <p>Así bloqueamos Meet sin bloquear el puerto 443.</p>
+    
+</section>
+
+<center><button><a href="Web.html">VOLVER AL INICIO</a></button></center>
+
+<footer>
+    <p>Contacto: reborn_technology@gmail.com</p>
+</footer>
+
+</body>
+</html>
